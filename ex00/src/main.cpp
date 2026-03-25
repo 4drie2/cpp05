@@ -8,7 +8,7 @@ int main()
 		std::cout << high << std::endl;
 		high.incrementGrade();
 		std::cout << high << std::endl;
-		high.incrementGrade(); // Should throw High
+		high.incrementGrade();
 	} catch (std::exception &e) {
 		std::cerr << e.what() << std::endl;
 	}
@@ -18,13 +18,13 @@ int main()
 		std::cout << low << std::endl;
 		low.decrementGrade();
 		std::cout << low << std::endl;
-		low.decrementGrade(); // Should throw Low
+		low.decrementGrade();
 	} catch (std::exception &e) {
 		std::cerr << e.what() << std::endl;
 	}
 
 	try {
-		Bureaucrat error("Error", 151); // Should throw Low on creation
+		Bureaucrat error("Error", 151);
 	} catch (std::exception &e) {
 		std::cerr << e.what() << std::endl;
 	}
