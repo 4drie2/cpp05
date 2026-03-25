@@ -6,7 +6,7 @@
 /*   By: abidaux <abidaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/13 13:40:36 by abidaux           #+#    #+#             */
-/*   Updated: 2026/03/25 02:30:12 by abidaux          ###   ########.fr       */
+/*   Updated: 2026/03/25 04:25:22 by abidaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 # include <iostream>
 # include <string>
 # include <exception>
+
+class Form; // Declaration anticipee pour eviter les inclusions circulaires
 
 class Bureaucrat
 {
@@ -41,9 +43,12 @@ class Bureaucrat
 		void				incrementGrade();
 		void				decrementGrade();
 
+		void				signForm(Form& form);
+
 	private:
 		const std::string	_name;
 		int					_grade;
+
 
 };
 

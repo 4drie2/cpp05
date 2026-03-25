@@ -6,7 +6,7 @@
 /*   By: abidaux <abidaux@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/25 02:29:00 by abidaux           #+#    #+#             */
-/*   Updated: 2026/03/25 02:32:36 by abidaux          ###   ########.fr       */
+/*   Updated: 2026/03/25 04:25:45 by abidaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,13 @@ class Form
 		Form& operator=(const Form& other);
 		~Form();
 
+		const std::string&	getName() const;
+		bool				getIsSigned() const;
+		int					getRequireSignGrade() const;
+		int					getRequireExecGrade() const;
+
+		void				beSigned(const Bureaucrat& bureaucrat);
+
 	private:
 		const std::string	_name;
 		bool				_isSigned;
@@ -39,3 +46,6 @@ class Form
 		const int			_requireExecGrade;
 
 };
+
+std::ostream& operator<<(std::ostream& os, const Form& form);
+
