@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.hpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: abidaux <abidaux@student.42.fr>            +#+  +:+       +#+        */
+/*   By: abidaux <abidaux@student.42lehavre.fr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/13 13:40:36 by abidaux           #+#    #+#             */
-/*   Updated: 2026/03/25 04:25:22 by abidaux          ###   ########.fr       */
+/*   Updated: 2026/05/13 18:11:16 by abidaux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <string>
 # include <exception>
 
-class Form; // Declaration anticipee pour eviter les inclusions circulaires
+class Form;
 
 class Bureaucrat
 {
